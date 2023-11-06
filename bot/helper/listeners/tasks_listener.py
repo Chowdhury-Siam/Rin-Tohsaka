@@ -345,7 +345,6 @@ class MirrorLeechListener:
         msg = f'{escape(name)}\n\n'
         msg += f'<b>• Size: </b>{get_readable_file_size(size)}\n'
         msg += f'<b>• Elapsed: </b>{get_readable_time(time() - self.message.date.timestamp())}\n'
-        msg += f'<b>• Google Group Link: </b>https://groups.google.com/g/siam_chowdhury\n'
         LOGGER.info(f'Task Done: {name}')
         buttons = ButtonMaker()
         iButton = ButtonMaker()
