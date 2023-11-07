@@ -357,8 +357,7 @@ class MirrorLeechListener:
                 msg += f'<b>• Corrupted files: </b>{mime_type}\n'
             msg += f'<b>• Uploaded by: </b>{self.tag}\n'
             msg += f'<b>• User ID: </b><code>{self.message.from_user.id}</code>\n\n'
-            msg += f'<b>• Google Group Link: "https://groups.google.com/g/siam_chowdhury"
-[Click here]({link})
+            msg += f'<b>• Google Group Link: </b>https://groups.google.com/g/siam_chowdhury\n'
             if not files:
                 if self.isPrivate:
                     msg += '<b>Files have not been sent for an unspecified reason</b>'
@@ -418,9 +417,7 @@ class MirrorLeechListener:
                 button = buttons.build_menu(2)
             msg += f'<b>• Uploaded by: </b>{self.tag}\n'
             msg += f'<b>• User ID: </b><code>{self.message.from_user.id}</code>\n\n'
-            msg += f'<b>• Google Group Link: "https://groups.google.com/g/siam_chowdhury"
-[Click here]({link})
-
+            msg += f'<b>• Google Group Link: </b>https://groups.google.com/g/siam_chowdhury\n'
             if config_dict['MIRROR_LOG_ID']:
                 log_msg = list((await sendMultiMessage(config_dict['MIRROR_LOG_ID'], msg, button)).values())[0]
                 if self.linkslogmsg:
