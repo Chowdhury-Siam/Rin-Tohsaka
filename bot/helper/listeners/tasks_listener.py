@@ -357,7 +357,6 @@ class MirrorLeechListener:
                 msg += f'<b>• Corrupted files: </b>{mime_type}\n'
             msg += f'<b>• Uploaded by: </b>{self.tag}\n'
             msg += f'<b>• User ID: </b><code>{self.message.from_user.id}</code>\n\n'
-            msg += f'<b>• Google Group Link: </b><a href="https://groups.google.com/g/siam_chowdhury">Click Here</a>\n'
             if not files:
                 if self.isPrivate:
                     msg += '<b>Files have not been sent for an unspecified reason</b>'
